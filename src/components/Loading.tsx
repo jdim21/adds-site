@@ -10,8 +10,8 @@ const Loading = ({ size = 300 }: { size?: number }): ReactElement => {
         autoplay: true,
         animationData,
       }}
-      height={size}
-      width={size}
+      height={150}
+      width={150}
     />
   )
 }
