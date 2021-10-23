@@ -26,7 +26,7 @@ const MintForm = (): any => {
         Cost: 3 LUNA
         </span>
       <span style={{float:'right', textAlign:'right'}}>
-        Remaining: ? / 5000
+        Remaining: ???? / 5000
       </span>
       </View>
     </StyledSection>

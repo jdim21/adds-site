@@ -9,6 +9,8 @@ import { ConnectedWallet, useConnectedWallet } from '@terra-money/wallet-provide
 import { MsgSend } from '@terra-money/terra.js';
 import { ContractAddr } from 'types'
 import usePostTx, { UsePostTxReturn } from 'hooks/common/usePostTx';
+import addsGif from '../../../../images/addsGif.gif'
+import FormImage from 'components/FormImage'
 
 
 import MintForm from './MintForm'
@@ -34,6 +36,17 @@ function NewMint(): any {
   return;
 }
 
+const StyledImgBox = styled(Card)`
+  width: 260px;
+  padding-top: 10px;
+  box-shadow: 0 3px 10px 0 rgb(66 66 66 / 5%);
+  background-color: #012E56;
+  margin: auto;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+`
+
 const Mint = (): any => {
 //   const sendProps = useSend()
 //   const { onClickSend, invalidForm, fee } = sendProps
@@ -47,6 +60,12 @@ const Mint = (): any => {
           Mint!
         </Button>
       </StyledCard>
+      <div style={{alignItems:'center'}}>
+      <StyledImgBox>
+        <FormImage src={addsGif} size={260} style={{}}/>
+      </StyledImgBox>
+
+      </div>
     </>
   )
 }
