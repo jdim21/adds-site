@@ -33,7 +33,7 @@ const getFontStyle = (
 } => {
   switch (fontType) {
     case 'B32':
-      return { fontSize: 32, fontWeight: 700 }
+      return { fontSize: 64, fontWeight: 700 }
     case 'R32':
       return { fontSize: 32, fontWeight: 400 }
     case 'B24':
@@ -64,7 +64,7 @@ const getFontStyle = (
 }
 
 const FormText = ({
-  fontType = 'R18',
+  fontType = 'R24',
   children,
   color,
   style,

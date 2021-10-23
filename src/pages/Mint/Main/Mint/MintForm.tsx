@@ -1,27 +1,35 @@
-// import styled from 'styled-components'
+import styled from 'styled-components'
 
 
-// import {
-//   View,
-//   Row,
-// } from 'components'
+import {
+  View,
+  // Row,
+} from 'components'
 // import { UseMintReturn } from 'hooks/common/useMint'
 
-// const StyledSection = styled(View)`
-//   padding-bottom: 20px;
-// `
+const StyledSection = styled(View)`
+  color: white;
+  padding-bottom: 20px;
+`
 
 // const StyledMaxBalance = styled(Row)`
 //   justify-content: flex-end;
 //   padding-top: 8px;
 // `
 
-const MintForm = (): {} => {
+const MintForm = (): any => {
 
   return (
-    <>
-    hi
-    </>
+    <StyledSection>
+      <View>
+        <span style={{float:'left', position:'absolute'}}>
+        Mint Cost: 3 LUNA
+        </span>
+      <span style={{float:'right', textAlign:'right'}}>
+        Remaining: ? / 5,000
+      </span>
+      </View>
+    </StyledSection>
   )
 }
 

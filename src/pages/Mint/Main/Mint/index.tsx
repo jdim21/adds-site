@@ -11,7 +11,7 @@ import { ContractAddr } from 'types'
 import usePostTx, { UsePostTxReturn } from 'hooks/common/usePostTx';
 
 
-// import MintForm from './MintForm'
+import MintForm from './MintForm'
 // import { of } from 'rxjs';
 
 const StyledCard = styled(Card)`
@@ -42,8 +42,8 @@ const Mint = (): any => {
   return (
     <>
       <StyledCard>
-        {/* <MintForm/> */}
-        <Button onClick={NewMint} >
+        <MintForm/>
+        <Button onClick={NewMint} disabled={true}>
           Mint!
         </Button>
       </StyledCard>

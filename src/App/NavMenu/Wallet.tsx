@@ -181,7 +181,7 @@ const Wallet = (): ReactElement => {
 
   return (
     <StyledSelectWallet onClick={openSelectWallet}>
-      <FormText fontType="R14">Connect Wallet </FormText>
+      <FormText fontType="R20">Connect Wallet </FormText>
     </StyledSelectWallet>
   )
 }

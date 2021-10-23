@@ -26,7 +26,7 @@ const StyledDefaultButton = styled.button<ButtonProps>`
 
 const StyledPrimaryButton = styled(StyledDefaultButton)<ButtonProps>`
   color: ${COLOR.gray._50};
-  background: #acd8da;
+  background: #8e7cc3;
 
   :hover {
     color: ${COLOR.gray._50};
