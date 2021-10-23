@@ -82,7 +82,7 @@ const Main = (): ReactElement => {
           <StyledSubTitle fontType="B24">
             Genesis
           </StyledSubTitle>
-          <StyledDesc>Minting will commence late October 2021 and will run until all 5,000 Doges have been adopted. Following the genesis, there will be many shenanigans. Details to come! Check the Discord for the latest information</StyledDesc>
+          <StyledDesc>- Minting will commence late October 2021 and will run until all 5,000 Doges have been adopted. Following the genesis, there will be many shenanigans. Details to come! Check the Discord for the latest information</StyledDesc>
           {/* <StyledDesc fontType="B20">100M Total supply</StyledDesc> */}
           {/* <StyledDesc>
             {'- 15% LP Staking reward. 5years, 5M>4M>3M>2M>1M'}
@@ -109,7 +109,7 @@ const Main = (): ReactElement => {
           <StyledDesc>
             <IconSquarePlus color={COLOR.success} /> MissDoge:
           </StyledDesc>
-          <StyledDesc fontType="B18"> Lifetime artist, dog lover, and witty remark extroardinaire
+          <StyledDesc fontType="B18"> Lifetime artist, dog lover, and witty remark extraordinaire
           </StyledDesc>
         </StyledSection>
 
