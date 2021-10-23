@@ -10,8 +10,10 @@ import { View } from 'components'
 import Mint from './Mint'
 
 const StyledContainer = styled(View)`
+  padding-top: 3rem;
   ${STYLE.setMediaWidth('sm')}
   @media ${STYLE.media.tablet} {
+    padding-top: 1rem;
     padding: 0 20px;
   }
 `
