@@ -1,12 +1,12 @@
 export enum RoutePath {
-  mint = '/',
+  mint = '/mint',
   home = '/home',
 
   lpTower = '/lpTower',
 
-  miaw_paper = '/miaw_paper',
+  miaw_paper = '/about',
 
-  say_miaw = '/say_miaw',
+  say_miaw = '/rarity',
 
   send = '/send',
 

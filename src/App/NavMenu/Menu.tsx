@@ -47,18 +47,18 @@ const Menu = (): ReactElement => {
   const [isOpenMobileMenu, setIsOpenMobileMenu] = useState(false)
 
   let menuList = [
+    // {
+    //   to: RoutePath.lpTower,
+    //   title: 'Rarity Chart',
+    // },
     {
-      to: RoutePath.lpTower,
+      to: RoutePath.say_miaw,
       title: 'Rarity Chart',
     },
-    // {
-    //   to: RoutePath.say_miaw,
-    //   title: 'Say Miaw',
-    // },
-    // {
-    //   to: RoutePath.send,
-    //   title: 'Send Miaw',
-    // },
+    {
+      to: RoutePath.miaw_paper,
+      title: 'About',
+    },
     // {
     //   to: RoutePath.miaw_paper,
     //   title: 'Miaw Paper',
