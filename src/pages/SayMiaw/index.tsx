@@ -31,7 +31,7 @@ const SayMiaw = (): ReactElement => {
   return <div style={{margin:"auto"}}>
       {/* <StyledImgBox> */}
         {/* <FormImage src={rarityChart} size={260} style={{alignItems:"center"}}/> */}
-        <img src={rarityChart} width="100%"/>
+        <img src={rarityChart} alt="rarityChart" width="100%"/>
       {/* </StyledImgBox> */}
 
   </div>
