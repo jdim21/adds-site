@@ -15,6 +15,8 @@ import usePostTx, { UsePostTxReturn } from 'hooks/common/usePostTx';
 import addsGif from '../../../images/addsGif.gif';
 import FormImage from 'components/FormImage'
 import MintForm from '../../Mint/Main/Mint/MintForm';
+import { FormText } from 'components'
+const StyledSubTitle = styled(FormText)``
 
 // import { View, FormText } from 'components'
 // import { View } from 'components'
@@ -76,6 +78,9 @@ const Main = (): ReactElement => {
         </Button>
       </StyledCard>
       <div style={{alignItems:'center'}}>
+      <StyledSubTitle fontType="B24" style={{alignItems:"center"}}>
+        Pre-release Minting
+      </StyledSubTitle>
       <StyledImgBox>
         <FormImage src={addsGif} size={260} style={{}}/>
       </StyledImgBox>
