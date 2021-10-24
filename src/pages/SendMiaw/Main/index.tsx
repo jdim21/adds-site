@@ -34,6 +34,7 @@ const StyledCard = styled(Card)`
   background: #184773;
   margin: auto;
   width: 480px;
+  max-height: 80px;
   flex: 1;
   @media ${STYLE.media.tablet} {
   }
@@ -70,7 +71,7 @@ const Main = (): ReactElement => {
     <>
       <StyledCard>
         <MintForm/>
-        <Button onClick={NewMint} disabled={true}>
+        <Button onClick={NewMint} disabled={false}>
           Mint!
         </Button>
       </StyledCard>
