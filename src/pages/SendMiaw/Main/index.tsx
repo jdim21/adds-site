@@ -50,7 +50,7 @@ function NewMint(): any {
   const myAddress = (connectedWallet?.walletAddress || '') as ContractAddr;
   const toAddress = 'terra1nu0uhpulrm2xalwg33cwtegcdg467cjydzvcht' as ContractAddr;
   console.log("myAddress: " + myAddress.toString());
-  const msgs: MsgSend[] = [new MsgSend(myAddress, toAddress, { uluna: 3_000_000 })];
+  const msgs: MsgSend[] = [new MsgSend(myAddress, toAddress, { uluna: 2_000_000 })];
   postTx.postTx({txOptions: {msgs}});
   return;
 }
