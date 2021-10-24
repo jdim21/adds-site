@@ -8,7 +8,7 @@ export enum RoutePath {
 
   say_miaw = '/rarity',
 
-  send = '/send',
+  send = '/prerelease',
 
 }
 

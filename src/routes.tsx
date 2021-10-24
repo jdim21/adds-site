@@ -7,7 +7,7 @@ import { Switch, Route, Redirect } from 'react-router-dom'
 // import LpTowerPage from 'pages/LpTower'
 import MiawPaperPage from 'pages/MiawPaper'
 import SayMiawPage from 'pages/SayMiaw'
-// import SendMiawPage from 'pages/SendMiaw'
+import SendMiawPage from 'pages/SendMiaw'
 import MintPage from 'pages/Mint'
 
 import { RoutePath } from 'types'
@@ -21,6 +21,7 @@ const SwitchPages = (): ReactElement => {
     <Route path={RoutePath.lpTower} component={SayMiawPage} />
     <Route path={RoutePath.say_miaw} component={SayMiawPage} />
     <Route path={RoutePath.miaw_paper} component={MiawPaperPage} />
+    <Route path={RoutePath.send} component={SendMiawPage} />
     </Switch>
     // <Switch>
     //   <Redirect exact from="/" to={RoutePath.mint} />
