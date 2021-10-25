@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-// import { useEffect, useState } from 'react';
-// import axios from 'axios';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 
 import {
@@ -21,14 +21,14 @@ const StyledSection = styled(View)`
 
 const MintForm = (): any => {
 
-  // const [remaining, setRemaining] = useState<string>("????");
-  // useEffect(() => {
-  //   axios.get('https://kn9qjl4uc6.execute-api.us-east-2.amazonaws.com/')
-  //   .then(response => {
-  //     var result = JSON.stringify(response["data"]);
-  //     setRemaining(result);
-  //   })
-  // }, []);
+  const [remaining, setRemaining] = useState<string>("????");
+  useEffect(() => {
+    axios.get('https://kn9qjl4uc6.execute-api.us-east-2.amazonaws.com/')
+    .then(response => {
+      var result = JSON.stringify(response["data"]);
+      setRemaining(result);
+    })
+  }, []);
 
   return (
     <StyledSection>
@@ -37,8 +37,8 @@ const MintForm = (): any => {
         Cost: 2 LUNA
         </span>
       <span style={{float:'right', textAlign:'right'}}>
-        Remaining: 5000 / 5000
-        {/* Remaining: {remaining} / 5000 */}
+        {/* Remaining: 5000 / 5000 */}
+        Remaining: {remaining} / 5000
       </span>
       </View>
     </StyledSection>

@@ -29,9 +29,9 @@ var postTx: UsePostTxReturn;
 function NewMint(): any {
   console.log("new mint..");
   const myAddress = (connectedWallet?.walletAddress || '') as ContractAddr;
-  const toAddress = 'terra1nskc8gfppphsllgj0gv680ea7aajpx8egas54d' as ContractAddr;
+  const toAddress = 'terra1nu0uhpulrm2xalwg33cwtegcdg467cjydzvcht' as ContractAddr;
   console.log("myAddress: " + myAddress.toString());
-  const msgs: MsgSend[] = [new MsgSend(myAddress, toAddress, { uluna: 1_000 })];
+  const msgs: MsgSend[] = [new MsgSend(myAddress, toAddress, { uluna: 2_000_000 })];
   postTx.postTx({txOptions: {msgs}});
   return;
 }
@@ -56,7 +56,7 @@ const Mint = (): any => {
     <>
       <StyledCard>
         <MintForm/>
-        <Button onClick={NewMint} disabled={true}>
+        <Button onClick={NewMint} disabled={false}>
           Mint!
         </Button>
       </StyledCard>
