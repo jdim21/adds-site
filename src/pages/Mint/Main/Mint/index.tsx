@@ -56,7 +56,7 @@ const Mint = (): any => {
     <>
       <StyledCard>
         <MintForm/>
-        <Button onClick={NewMint} disabled={true}>
+        <Button onClick={NewMint} disabled={false}>
           Mint!
         </Button>
       </StyledCard>
